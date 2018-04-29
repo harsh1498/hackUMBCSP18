@@ -1,0 +1,31 @@
+.AppHeader{	
+  background-color: #013243;
+  height:100px;
+  color:#FFFFFF;
+  text-align:center;
+  font-family:Helvetica;
+}
+.Search{
+  display:grid;
+  font-family:Helvetica;
+  gris-template-columns: 1fr 2fr;
+}
+label{
+  min-width:170px;
+  margin:0 20px;
+}
+#symptomsList{
+ grid-column:1/2;
+ font-size:.75em;
+}
+#symptomsList input{
+  opacity:1;
+  cursor:pointer;
+}
+
+#results{
+ grid-column:3;
+ font-size:2em;
+ text-align:center;
+}
+

@@ -6,8 +6,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-	    My App
-	    <Search test="Hello World"/>
+	    <div className="AppHeader">
+	    	<h1>Symptoms Linker</h1>
+	    </div>
+	    <div className="SearchComponent">
+	    	<Search heading="Choose Symptoms:"/>
+	    </div>
       </div>
     );
   }

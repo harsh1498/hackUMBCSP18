@@ -1,20 +1,36 @@
+body{
+  background-color:#800000;
+  }
+.App{
+  background-color:white;
+  color:white;
+}
+h6{
+  text-align:left;
+  padding:25px;
+}
+.jumbotron{
+  border-radius:0;
+  background-image:url('https://lh3.googleusercontent.com/C6rdpXRR9NQVSwGwQYEZmf3O7rO6F8N7XKdN825SYEPNiJXOzD8sVU4wWGbihYRD6Q=h900');
+}
 .AppHeader{	
   background-color: #013243;
   height:100px;
   color:#FFFFFF;
   text-align:center;
-  font-family:Helvetica;
 }
 .Search{
   display:grid;
-  font-family:Helvetica;
+  color:black;
+  text-align:left;
   gris-template-columns: 1fr 2fr;
 }
 label{
-  min-width:170px;
+  min-width:200px;
   margin:0 20px;
 }
 #symptomsList{
+ text-align:left;
  grid-column:1/2;
  font-size:.75em;
 }

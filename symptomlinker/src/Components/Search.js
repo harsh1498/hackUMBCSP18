@@ -39,7 +39,6 @@ class Search extends Component {
 	 page.appendChild(label);
 	 if(i%2 != 0){
 	 page.appendChild(document.createElement("BR"));
-	 page.appendChild(document.createElement("BR"));
 	}
 	 i += 1;
         };
@@ -49,10 +48,11 @@ class Search extends Component {
     return (
       <div className="Search" id="search">
 	<div id="choose">
-	<h5>Choose your Symptoms **requires 7 to activate**</h5>
+	<h6>Choose your Symptoms **requires 7 to activate**</h6>
 	<ul id='symptomsList'></ul>
 	</div>
-	<div id='results'>
+	<div className="container" id="results">
+	<h6>Results Will Appear Here:</h6>
 	</div>
       </div>
     );

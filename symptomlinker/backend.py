@@ -51,11 +51,12 @@ def create_list():
     dataFile.close()
     return data , symptoms;
     
-CARD_TOP = '''<div class="card border-dark mb-3" style="max-width: 18rem;">
+CARD_TOP = '''<div class="card text-center border-danger mb-3" style="max-width: 18rem;">
   <div class="card-header">'''
   
 CARD_BOT =   '''</div>
-    <div class="card-body text-dark">
+    <div class="card-body" style="background-color:rgb('''
+RGB = ''',25,25)">
         <h5 class="card-title">
         '''
 CARD_T =        '''
@@ -88,7 +89,7 @@ def symptoms():
             if '<br>'+issue not in issues:
                 issues.append('<br>'+issue)
         for i in range(len(issues)):
-            issues[i] = CARD_TOP+issues[i]+CARD_BOT+str(97-i*2)+'%'+CARD_T
+            issues[i] = CARD_TOP+issues[i]+CARD_BOT+str(97-i*2)+RGB+str(97-i*2)+'%'+CARD_T
         package = {'issue':issues}
         resp = Response(issues, status=200)
         resp.headers['Access-Control-Allow-Origin'] = '*'
